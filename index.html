@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where to Eat? Random Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/9817eddfe4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <h1 class="header__title text-shadows">
+                Random Generator
+            </h1>
+        </header>
+
+        <div class="menu">
+            <div class="menu--1" >
+                <h3 class="menu__text" id="where-eat-button">where to eat?</h3>
+                <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M221.6 148.7C224.7 161.3 224.8 174.5 222.1 187.2C219.3 199.1 213.6 211.9 205.6 222.1C191.1 238.6 173 249.1 151.1 254.1V472C151.1 482.6 147.8 492.8 140.3 500.3C132.8 507.8 122.6 512 111.1 512C101.4 512 91.22 507.8 83.71 500.3C76.21 492.8 71.1 482.6 71.1 472V254.1C50.96 250.1 31.96 238.9 18.3 222.4C10.19 212.2 4.529 200.3 1.755 187.5C-1.019 174.7-.8315 161.5 2.303 148.8L32.51 12.45C33.36 8.598 35.61 5.197 38.82 2.9C42.02 .602 45.97-.4297 49.89 .0026C53.82 .4302 57.46 2.303 60.1 5.259C62.74 8.214 64.18 12.04 64.16 16V160H81.53L98.62 11.91C99.02 8.635 100.6 5.621 103.1 3.434C105.5 1.248 108.7 .0401 111.1 .0401C115.3 .0401 118.5 1.248 120.9 3.434C123.4 5.621 124.1 8.635 125.4 11.91L142.5 160H159.1V16C159.1 12.07 161.4 8.268 163.1 5.317C166.6 2.366 170.2 .474 174.1 .0026C178-.4262 181.1 .619 185.2 2.936C188.4 5.253 190.6 8.677 191.5 12.55L221.6 148.7zM448 472C448 482.6 443.8 492.8 436.3 500.3C428.8 507.8 418.6 512 408 512C397.4 512 387.2 507.8 379.7 500.3C372.2 492.8 368 482.6 368 472V352H351.2C342.8 352 334.4 350.3 326.6 347.1C318.9 343.8 311.8 339.1 305.8 333.1C299.9 327.1 295.2 320 291.1 312.2C288.8 304.4 287.2 296 287.2 287.6L287.1 173.8C288 136.9 299.1 100.8 319.8 70.28C340.5 39.71 369.8 16.05 404.1 2.339C408.1 .401 414.2-.3202 419.4 .2391C424.6 .7982 429.6 2.62 433.9 5.546C438.2 8.472 441.8 12.41 444.2 17.03C446.7 21.64 447.1 26.78 448 32V472z"/></svg>
+            </div>
+
+            <div class="menu--2">
+                <h3 class="menu__text" id="yes-no-button">yes or no?</h3>
+                <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M438.6 105.4C451.1 117.9 451.1 138.1 438.6 150.6L182.6 406.6C170.1 419.1 149.9 419.1 137.4 406.6L9.372 278.6C-3.124 266.1-3.124 245.9 9.372 233.4C21.87 220.9 42.13 220.9 54.63 233.4L159.1 338.7L393.4 105.4C405.9 92.88 426.1 92.88 438.6 105.4H438.6z"/></svg>
+            </div>
+
+            <div class=" menu--3">
+                <h3 class="menu__text" id="generate-own-button">generate own</h3>
+                <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L444.3 197.7L314.3 67.72L362.7 19.32zM421.7 220.3L188.5 453.4C178.1 463.8 165.2 471.5 151.1 475.6L30.77 511C22.35 513.5 13.24 511.2 7.03 504.1C.8198 498.8-1.502 489.7 .976 481.2L36.37 360.9C40.53 346.8 48.16 333.9 58.57 323.5L291.7 90.34L421.7 220.3z"/></svg>
+            </div>
+        </div>
+
+
+        <div class="content">
+
+            <div class="content__container" >
+
+                <div class="content__container-left">
+                    <!-- 1: where to eat -->
+                    <div class="content__container-changing" id="where-eat-content">
+                        <h3 class="content__title">where to eat?</h3>
+                    </div>
+
+                     <!-- 2: yes or no? -->
+                    <div class="content__container-changing content-hidden" id="yes-no-content">
+                        <h3 class="content__title">yes or no?</h3>
+                    </div> 
+
+                    <!-- 3: generate your own -->
+                    <div class="content__container-changing content-hidden" id="generate-own-content">
+                        <h3 class="content__title"></h3>
+                        <div class="input-button" id="input-button-left">
+                            <input type="text" name="generated-question" id="generated-question">
+                            <button class="btn btn--question" id="generate-question-btn">question</button>
+                        </div>
+                    </div> 
+
+                    <div class="content__result">
+                        <h1 id="chosen-one"></h1>
+                    </div>
+
+                    <button class="btn btn--choose" id="choose-button">Choose!</button>
+                </div>
+
+                <div class="content__container-right">
+                    <h4>Choices</h4>
+                    <div id="choice-box">
+                    </div>
+                    <div class="input-button" id="input-button-right">
+                        <input type="text" name="input-choice" id="input-choice">
+                        <button class="btn btn--add" id="add-choice">Add Choice</button>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+
+        </div>
+
+        <footer class="footer">
+            <button class="btn btn--reset" id="reset-button">Reset</button>
+        </footer>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
