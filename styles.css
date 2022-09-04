@@ -208,6 +208,11 @@ body {
   letter-spacing: 0.4rem;
 }
 
+@media only screen and (max-width: $small-screen){
+  .header .text-shadows {
+    font-size: calc(1rem + 5vw);
+}
+
 @-webkit-keyframes shadows {
   0% {
     text-shadow: none;
