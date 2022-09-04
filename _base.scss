@@ -1,0 +1,50 @@
+:root {
+    --color-dark: #1B2430;
+    --color-primary: #576F72;
+    --color-secondary: #f7efef;
+
+    --color-animation-1: #C4DFAA;
+    --color-animation-1-light: #e1ecd6;
+    --color-animation-2: #bad3a3;
+    --color-animation-3: #90C8AC;
+    --color-animation-4: #73A9AD;
+    --color-animation-4-light: #D6E1EC;
+    --color-animation-5: #7D9D9C;
+
+    --color-gray-light:#e3e4e3;
+
+    --color-reset: #eccedd;
+    --color-reset-dark: #f0bfd7;
+}
+
+$large-screen: 1100px;
+$medium-screen: 900px;
+$small-screen: 700px;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'IBM Plex Mono', monospace;
+
+    @media only screen and (max-width: $medium-screen){
+        font-size: 55%;
+      }
+
+    @media only screen and (max-width: $small-screen){
+        font-size: 40%;
+      }
+}
+
+body{
+    margin: 1rem;
+    background-color: var(--color-secondary);
+}
