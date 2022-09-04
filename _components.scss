@@ -81,6 +81,10 @@
         color: var(--color-animation-1);
         animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
         letter-spacing: 0.4rem;
+        
+        @media only screen and (max-width: $small-screen){
+            font-size: calc(1rem + 5vw);
+        }
       }
       
       @keyframes shadows {
